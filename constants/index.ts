@@ -1,12 +1,23 @@
-// constants/index.ts
+// API URLs
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
 
-// Base URL for your API (can be updated later)
-export const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'https://api.example.com';
+// UI Constants
+export const UI_CONSTANTS = {
+  CARD_VARIANTS: {
+    DEFAULT: 'default',
+    FEATURED: 'featured',
+  },
+  BUTTON_VARIANTS: {
+    PRIMARY: 'primary',
+    SECONDARY: 'secondary',
+  },
+};
 
-// Application name (used across the app for titles, metadata, etc.)
-export const APP_NAME = 'ALX Listing App';
+// Configuration Settings
+export const CONFIG = {
+  ITEMS_PER_PAGE: 12,
+  MAX_PRICE_FILTER: 1000,
+  MIN_PRICE_FILTER: 0,
+};
 
-// You can add more constants here as your app grows.
-// For example:
-export const ITEMS_PER_PAGE = 10;
-export const DEFAULT_IMAGE = '/assets/placeholder.jpg';
+// Add more constants as needed
